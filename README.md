@@ -10,7 +10,7 @@
 **Step 1: clone the repository**
 
 ```bash
-git clone https://github.com/didin8080/Health-Stack.git
+git clone https://github.com/vipinchandran-pkd/Health-Stack-Project.git
 ```
 
 **Step 2:Test it locally**
@@ -54,7 +54,7 @@ python3 manage.py runserver 0.0.0.0:8000
 
 It will generate an ip address copy ip and paste it on the browser.
 
-Health-stack Project by Didin `<127.0.0.1:8000>`
+Health-stack Project by Vipinchan `<127.0.0.1:8000>`
 
 <div align="center">
 <img src="img/local-img1.png" alt="Logo" height="500%" width="100%">
@@ -95,7 +95,7 @@ sudo apt-get update
 **Step 3: clone the repository**
 
 ```bash
-git clone https://github.com/didin8080/Health-Stack.git
+git clone https://github.com/vipinchandran-pkd/Health-Stack-Project.git
 ```
 
 **Step 4: Install python**
@@ -272,7 +272,7 @@ sudo apt-get update
 **Step 12: clone the repository**
 
 ```bash
-git clone https://github.com/didin8080/Class-manager.git
+git clone https://github.com/vipinchandran-pkd/Health-Stack-Project.git
 ```
 
 
