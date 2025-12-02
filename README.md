@@ -465,9 +465,9 @@ pipeline {
     agent any
     environment{
         SCANNER_HOME = tool 'sonar-scanner'
-        DOCKER_REGISTRY = 'didin8080'
+        DOCKER_REGISTRY = 'vipin007'
         IMAGE_NAME = "health-stack"
-        IMAGE_FULL_NAME = "didin8080/health-stack"
+        IMAGE_FULL_NAME = "vipin007/health-stack"
     }
     stages {
         stage('Clean Workspace') {
@@ -477,7 +477,7 @@ pipeline {
         }
        stage('Checkout from GitHub') {
             steps {
-                git branch: 'main', url: 'https://github.com/didin2003/HealthStack-System.git'
+                git branch: 'main', url: 'github.com/vipinchandran-pkd/Health-Stack-Project.git'
                 script {
                     def hash = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
                     def timestamp = new Date().format('yyyyMMddHHmmss')
@@ -575,7 +575,7 @@ EOF
                                 set -x
                                 mkdir -p ~/.docker
                                 echo '{ "credsStore": "" }' > ~/.docker/config.json
-                                echo "${DOCKER_TOKEN}" | docker login -u didin8080 --password-stdin
+                                echo "${DOCKER_TOKEN}" | docker login -u vipin007 --password-stdin
                                 docker images
                                 docker push ${IMAGE_FULL_NAME}:${IMAGE_VERSION} || true
                                 docker push ${IMAGE_FULL_NAME}:latest
